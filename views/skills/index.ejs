@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Express To-Dos</title>
+    <title>Venura's Dev Skills</title>
 </head>
 <body>
-    <h1>Todos</h1>
+    <h1>Skills</h1>
     <ul>
-      <% todos.forEach(function(t) { %>
-        <li><a href="/todos/<%= t.id %>"><%= t.todo %></a></li>
+      <% skills.forEach(function(t) { %>
+        <li><a href="/skills/<%= t.id %>"><%= t.skill %></a></li>
       <% }); %>
     </ul>
 </body>

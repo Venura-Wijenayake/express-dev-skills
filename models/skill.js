@@ -1,7 +1,9 @@
-const todos = [
-    {id: 125223, todo: 'Feed Dogs', done: true},
-    {id: 127904, todo: 'Learn Express', done: false},
-    {id: 139608, todo: 'Buy Milk', done: false}
+// models/skill.js
+
+const skills = [
+    {id: 125223, skill: 'Feed Dogs', done: true},
+    {id: 127904, skill: 'Learn Express', done: false},
+    {id: 139608, skill: 'Buy Milk', done: false}
   ];
   
   module.exports = {
@@ -10,7 +12,7 @@ const todos = [
   };
   
   function getAll() {
-    return todos;
+    return skills;
   }
  
   function getOne(id) {
@@ -18,5 +20,5 @@ const todos = [
     id = parseInt(id);
     // The Array.prototype.find iterator method is
     // ideal for finding objects within an array
-    return todos.find(todo => todo.id === id);
+    return skills.find(skill => skill.id === id);
   }
