@@ -21,8 +21,8 @@ function update(req, res) {
 function edit(req, res) {
   const skill = Skill.getOne(req.params.id);
   res.render('skills/edit', {
-    title: 'Edit To-Do',
-    todo,
+    title: 'Edit Skill',
+    skill,
   });
 }
 
